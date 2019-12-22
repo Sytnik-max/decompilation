@@ -26,6 +26,9 @@ public class TitlesPanel
     private int start_angle = 0;
     private int shape;
 
+    /**Устанавливает параметры анимации для фигуры
+     * @param _shape Тип фигуры
+     */
     public TitlesPanel(int _shape) {
         this.shape = _shape;
         this.animation = new Timer(50, this);
@@ -39,7 +42,10 @@ public class TitlesPanel
             this.repaint();
         }
     }
-
+    
+    /** Создает новый объект и устанавливает значения его свойст
+     *
+     */
     private void doDrawing(Graphics g) {
         this.is_done = false;
         this.g2d = (Graphics2D)g;
