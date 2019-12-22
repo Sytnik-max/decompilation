@@ -12,6 +12,8 @@ extends JFrame {
             this.initUI();
         }
 
+    /** Установка значений свойств картинки
+     */
         private void initUI() {
             this.setTitle("\u041a\u0440\u0438\u0432\u044b\u0435 \u0444\u0438\u0433\u0443\u0440\u044b");
             this.setDefaultCloseOperation(3);
@@ -19,7 +21,9 @@ extends JFrame {
             this.setSize(350, 350);
             this.setLocationRelativeTo(null);
         }
-
+    /** Главный метод программы.
+     * @param args Параметры командной строки
+     */
         public static void main (String[] args) {
             SwingUtilities.invokeLater(new Runnable(){
 
