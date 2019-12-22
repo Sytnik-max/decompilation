@@ -13,6 +13,9 @@ import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
 
+/** Задает возможные типы фигур и ширину линий
+     * @param shape_type Тип фигуры
+     */
 public class ShapeFactory {
     public Shape shape;
     public BasicStroke stroke = new BasicStroke(3.0f);
@@ -78,6 +81,8 @@ public class ShapeFactory {
         }
     }
 
+    /**Задает тип фигуры "Звезда"
+     */
     private static Shape createStar(int arms, Point center, double rOuter, double rInner) {
         double angle = 3.141592653589793 / (double)arms;
         GeneralPath path = new GeneralPath();
